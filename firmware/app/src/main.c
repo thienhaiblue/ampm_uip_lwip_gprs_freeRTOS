@@ -271,15 +271,15 @@ void vGSM_GPRS_Task(void *arg)
 			}
 			//SMS test
 			//Send Sms with interval = 3600s
-//			if(CheckTimeout(&tSendSmsTime) == SYSTICK_TIMEOUT)
-//			{
-//				InitTimeout(&tSendSmsTime,SYSTICK_TIME_SEC(3600));
-//				smsLen =	sprintf((char *)pdu2uniBuf,"Xin chào!\n");
-//				smsLen = utf8s_to_ucs2s((int16_t *)replySmsBuf,pdu2uniBuf);
-//				big2litel_endian((uint16_t *)replySmsBuf,unilen((uint16_t *)replySmsBuf));
-//				smsLen *= 2;
-//				Ampm_Sms_SendMsg(&smsUser,(uint8_t *)BOSS_PHONE_NUMBER,(uint8_t *)replySmsBuf,smsLen,SMS_PDU16_MODE,30/*interval resend*/,3/*resend times*/);
-//			}
+			if(CheckTimeout(&tSendSmsTime) == SYSTICK_TIMEOUT)
+			{
+				InitTimeout(&tSendSmsTime,SYSTICK_TIME_SEC(3600));
+				smsLen =	sprintf((char *)pdu2uniBuf,"Xin chào!\n");
+				smsLen = utf8s_to_ucs2s((int16_t *)replySmsBuf,pdu2uniBuf);
+				big2litel_endian((uint16_t *)replySmsBuf,unilen((uint16_t *)replySmsBuf));
+				smsLen *= 2;
+				Ampm_Sms_SendMsg(&smsUser,(uint8_t *)BOSS_PHONE_NUMBER,(uint8_t *)replySmsBuf,smsLen,SMS_PDU16_MODE,30/*interval resend*/,3/*resend times*/);
+			}
 			// 0.1 sec process 
 			if(CheckTimeout(&tApp_100MS) == SYSTICK_TIMEOUT)
 			{
