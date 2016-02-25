@@ -1,0 +1,57 @@
+Dependencies for Project 'ampm_lib', Target 'ampm_lib': (DO NOT MODIFY !)
+F (..\data_cmp.c)(0x534621BA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\ampm_lib-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\output\data_cmp.o --omf_browse .\output\data_cmp.crf --depend .\output\data_cmp.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\data_cmp.h)(0x52F26032)
+F (..\fcs.c)(0x53021356)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\ampm_lib-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\output\fcs.o --omf_browse .\output\fcs.crf --depend .\output\fcs.d)
+I (..\fcs.h)(0x53021356)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+F (..\m_time.c)(0x52F25ACC)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\ampm_lib-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\output\m_time.o --omf_browse .\output\m_time.crf --depend .\output\m_time.d)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+F (..\packet_queue.c)(0x52F7837E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\ampm_lib-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\output\packet_queue.o --omf_browse .\output\packet_queue.crf --depend .\output\packet_queue.d)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\packet_queue.h)(0x52F7837E)
+I (..\ringbuf.h)(0x52F25ACC)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+F (..\protocol.c)(0x53021356)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\ampm_lib-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\output\protocol.o --omf_browse .\output\protocol.crf --depend .\output\protocol.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\fcs.h)(0x53021356)
+I (..\protocol.h)(0x5315E324)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+F (..\ringbuf.c)(0x53193D7E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\ampm_lib-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\output\ringbuf.o --omf_browse .\output\ringbuf.crf --depend .\output\ringbuf.d)
+I (..\..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+F (..\sparser.c)(0x5623B0C0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\ampm_lib-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\output\sparser.o --omf_browse .\output\sparser.crf --depend .\output\sparser.d)
+I (..\..\..\ampm_lib\lib/sparser.h)(0x56BD737C)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ampm_list.h)(0x56BD7352)
+I (..\..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+F (..\sys_time.c)(0x56CEA41A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\ampm_lib-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\output\sys_time.o --omf_browse .\output\sys_time.crf --depend .\output\sys_time.d)
+I (..\sys_time.h)(0x56CE8318)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\m_time.h)(0x52F25ACC)
+F (..\sys_tick.c)(0x53749D04)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\ampm_lib-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\output\sys_tick.o --omf_browse .\output\sys_tick.crf --depend .\output\sys_tick.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\sys_tick.h)(0x534607B2)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+F (..\encoding.c)(0x53A44BB8)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\ampm_lib-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\output\encoding.o --omf_browse .\output\encoding.crf --depend .\output\encoding.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/encoding.h)(0x53A44BB2)
+F (..\ampm_list.c)(0x56BD7374)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\ampm_lib-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\output\ampm_list.o --omf_browse .\output\ampm_list.crf --depend .\output\ampm_list.d)
+I (..\..\..\ampm_lib\lib/ampm_list.h)(0x56BD7352)
+F (..\ampm_sprintf.c)(0x54F57948)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\ampm_lib-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\output\ampm_sprintf.o --omf_browse .\output\ampm_sprintf.crf --depend .\output\ampm_sprintf.d)
+I (..\..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+F (..\DTMF.c)(0x53E3AEA4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\ampm_lib-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\output\dtmf.o --omf_browse .\output\dtmf.crf --depend .\output\dtmf.d)
+I (..\DTMF.h)(0x533E1D52)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)

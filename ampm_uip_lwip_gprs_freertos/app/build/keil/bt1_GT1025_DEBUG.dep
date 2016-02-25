@@ -1,0 +1,1268 @@
+Dependencies for Project 'bt1', Target 'GT1025_DEBUG': (DO NOT MODIFY !)
+F (..\..\src\main.c)(0x56269A14)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\main.o --omf_browse .\debug\main.crf --depend .\debug\main.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\driver\ampm\stm32\uart1.h)(0x53B4C156)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\driver\ampm\stm32\uart2.h)(0x5459DC60)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x54201488)
+I (..\..\driver\ampm\stm32\uart3.h)(0x5420146E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4FEACCF0)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97772)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\driver\ampm\stm32\rtc.h)(0x53B4EA7A)
+I (..\..\driver\ampm\stm32\exti.h)(0x55A4ADBE)
+I (..\..\inc\dbg.h)(0x52D3F8AC)
+I (..\..\driver\ampm\stm32\low_power_mode.h)(0x52F78380)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\inc\sms_task.h)(0x5583D254)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_sms.h)(0x55347A7C)
+I (..\..\inc\call_task.h)(0x53379ED6)
+I (..\..\inc\alarm_task.h)(0x53A95F94)
+I (..\..\inc\uart_config_task.h)(0x5459EB62)
+I (..\..\inc\app_config_task.h)(0x53D08CC8)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (..\..\inc\led.h)(0x53DF9BA2)
+I (..\..\inc\firmware_task.h)(0x545843CA)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (..\..\ampm_lib\uip\resolver.h)(0x53909D12)
+I (..\..\ampm_lib\uip\uip_ppp.h)(0x53A06224)
+I (..\..\ampm_lib\PPP\ppp.h)(0x55348166)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (..\..\ampm_lib\uip\timer.h)(0x536D14AA)
+I (..\..\ampm_lib\uip\resolv.h)(0x4F98C5E8)
+I (..\..\inc\tcp_ip_task.h)(0x557C2744)
+I (..\..\ampm_lib\lib/sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+I (..\..\inc\meter_task.h)(0x5620AA06)
+I (..\..\ampm_lib\lib/encoding.h)(0x53A44BB2)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_main_task.h)(0x5584E092)
+I (..\..\ampm_lib\ampm_gsm\at_command_parser.h)(0x551625F0)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_call.h)(0x55347BBE)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_ring.h)(0x55347A8E)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_startup.h)(0x55D04B80)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_dial_up.h)(0x5516266A)
+I (..\..\ampm_lib\flash_mem\sst25.h)(0x55D2F4AA)
+I (..\..\ampm_lib\db\db.h)(0x55D0893A)
+I (..\..\inc\elster_tasks.h)(0x541126C6)
+F (..\..\src\system_config.c)(0x563AF444)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\system_config.o --omf_browse .\debug\system_config.crf --depend .\debug\system_config.d)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\driver\ampm\stm32\rtc.h)(0x53B4EA7A)
+I (..\..\driver\ampm\stm32\exti.h)(0x55A4ADBE)
+I (..\..\inc\dbg.h)(0x52D3F8AC)
+F (..\..\src\sms_task.c)(0x563B15C6)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\sms_task.o --omf_browse .\debug\sms_task.crf --depend .\debug\sms_task.d)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\lib/sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+I (..\..\ampm_lib\lib/encoding.h)(0x53A44BB2)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_sms.h)(0x55347A7C)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_main_task.h)(0x5584E092)
+I (..\..\ampm_lib\ampm_gsm\at_command_parser.h)(0x551625F0)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_call.h)(0x55347BBE)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_ring.h)(0x55347A8E)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_startup.h)(0x55D04B80)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_dial_up.h)(0x5516266A)
+I (..\..\inc\tcp_ip_task.h)(0x557C2744)
+I (..\..\ampm_lib\PPP\ppp.h)(0x55348166)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\inc\sms_task.h)(0x5583D254)
+I (..\..\ampm_lib\db\db.h)(0x55D0893A)
+I (..\..\ampm_lib\flash_mem\sst25.h)(0x55D2F4AA)
+I (..\..\inc\elster_tasks.h)(0x541126C6)
+F (..\..\src\app_config_task.c)(0x55D2A130)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\app_config_task.o --omf_browse .\debug\app_config_task.crf --depend .\debug\app_config_task.d)
+I (..\..\inc\app_config_task.h)(0x53D08CC8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\uart_config_task.h)(0x5459EB62)
+I (..\..\ampm_lib\flash_mem\sst25.h)(0x55D2F4AA)
+I (..\..\driver\ampm\stm32\uart3.h)(0x5420146E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x54201488)
+F (..\..\src\uart_config_task.c)(0x5459EB56)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\uart_config_task.o --omf_browse .\debug\uart_config_task.crf --depend .\debug\uart_config_task.d)
+I (..\..\inc\uart_config_task.h)(0x5459EB62)
+I (..\..\inc\app_config_task.h)(0x53D08CC8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\driver\ampm\stm32\uart3.h)(0x5420146E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x54201488)
+I (..\..\driver\ampm\stm32\uart2.h)(0x5459DC60)
+F (..\..\src\led.c)(0x53DDB132)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\led.o --omf_browse .\debug\led.crf --depend .\debug\led.d)
+I (..\..\inc\led.h)(0x53DF9BA2)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+F (..\..\src\firmware_task.c)(0x563B020A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\firmware_task.o --omf_browse .\debug\firmware_task.crf --depend .\debug\firmware_task.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\inc\app_config_task.h)(0x53D08CC8)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\uart_config_task.h)(0x5459EB62)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (..\..\ampm_lib\uip\resolver.h)(0x53909D12)
+I (..\..\ampm_lib\uip\uip_ppp.h)(0x53A06224)
+I (..\..\ampm_lib\PPP\ppp.h)(0x55348166)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (..\..\ampm_lib\uip\timer.h)(0x536D14AA)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97772)
+I (..\..\ampm_lib\uip\resolv.h)(0x4F98C5E8)
+I (..\..\inc\tcp_ip_task.h)(0x557C2744)
+F (..\..\src\tcp_ip_task.c)(0x55D2BF72)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\tcp_ip_task.o --omf_browse .\debug\tcp_ip_task.crf --depend .\debug\tcp_ip_task.d)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\ampm_lib\PPP\ppp.h)(0x55348166)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\ampm_lib\uip\resolv.h)(0x4F98C5E8)
+I (..\..\ampm_lib\uip\resolver.h)(0x53909D12)
+I (..\..\ampm_lib\uip\uip_ppp.h)(0x53A06224)
+I (..\..\ampm_lib\uip\timer.h)(0x536D14AA)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97772)
+I (..\..\inc\rs232_server.h)(0x552A3746)
+I (..\..\inc\tcp_ip_task.h)(0x557C2744)
+I (..\..\inc\rs485_server.h)(0x552C8D26)
+I (..\..\ampm_lib\lib/sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+I (..\..\inc\firmware_task.h)(0x545843CA)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\cfg_server.h)(0x552CB072)
+I (..\..\ampm_lib\ftp/ftpc.h)(0x55CCAF7C)
+I (..\..\ampm_lib\db\db.h)(0x55D0893A)
+I (..\..\ampm_lib\flash_mem\sst25.h)(0x55D2F4AA)
+I (..\..\ampm_lib\ftp/ftp.h)(0x55770EEE)
+F (..\..\src\meter_task.c)(0x5620AF7C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\meter_task.o --omf_browse .\debug\meter_task.crf --depend .\debug\meter_task.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (..\..\driver\ampm\stm32\uart2.h)(0x5459DC60)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x54201488)
+I (..\..\driver\ampm\stm32\uart3.h)(0x5420146E)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\inc\uart_config_task.h)(0x5459EB62)
+I (..\..\inc\app_config_task.h)(0x53D08CC8)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\inc\sms_task.h)(0x5583D254)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_sms.h)(0x55347A7C)
+I (..\..\inc\tcp_ip_task.h)(0x557C2744)
+I (..\..\ampm_lib\PPP\ppp.h)(0x55348166)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (..\..\inc\elster_tasks.h)(0x541126C6)
+I (..\..\inc\meter_task.h)(0x5620AA06)
+F (..\..\src\rs232_server.c)(0x563AEE62)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\rs232_server.o --omf_browse .\debug\rs232_server.crf --depend .\debug\rs232_server.d)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_main_task.h)(0x5584E092)
+I (..\..\ampm_lib\ampm_gsm\at_command_parser.h)(0x551625F0)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_sms.h)(0x55347A7C)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_call.h)(0x55347BBE)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_ring.h)(0x55347A8E)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_startup.h)(0x55D04B80)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_dial_up.h)(0x5516266A)
+I (..\..\inc\tcp_ip_task.h)(0x557C2744)
+I (..\..\ampm_lib\PPP\ppp.h)(0x55348166)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\inc\rs232_server.h)(0x552A3746)
+I (..\..\ampm_lib\uip\resolver.h)(0x53909D12)
+I (..\..\ampm_lib\uip\uip_ppp.h)(0x53A06224)
+I (..\..\ampm_lib\uip\timer.h)(0x536D14AA)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97772)
+I (..\..\ampm_lib\uip\resolv.h)(0x4F98C5E8)
+I (..\..\ampm_lib\PPP\xtea.h)(0x4F98C5E8)
+I (..\..\driver\ampm\stm32\uart3.h)(0x5420146E)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x54201488)
+I (..\..\inc\meter_task.h)(0x5620AA06)
+I (..\..\inc\led.h)(0x53DF9BA2)
+I (..\..\ampm_lib\lib/sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+F (..\..\src\rs485_server.c)(0x563AEEBE)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\rs485_server.o --omf_browse .\debug\rs485_server.crf --depend .\debug\rs485_server.d)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_main_task.h)(0x5584E092)
+I (..\..\ampm_lib\ampm_gsm\at_command_parser.h)(0x551625F0)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_sms.h)(0x55347A7C)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_call.h)(0x55347BBE)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_ring.h)(0x55347A8E)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_startup.h)(0x55D04B80)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_dial_up.h)(0x5516266A)
+I (..\..\inc\tcp_ip_task.h)(0x557C2744)
+I (..\..\ampm_lib\PPP\ppp.h)(0x55348166)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\inc\rs485_server.h)(0x552C8D26)
+I (..\..\ampm_lib\uip\resolver.h)(0x53909D12)
+I (..\..\ampm_lib\uip\uip_ppp.h)(0x53A06224)
+I (..\..\ampm_lib\uip\timer.h)(0x536D14AA)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97772)
+I (..\..\ampm_lib\uip\resolv.h)(0x4F98C5E8)
+I (..\..\ampm_lib\PPP\xtea.h)(0x4F98C5E8)
+I (..\..\driver\ampm\stm32\uart2.h)(0x5459DC60)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x54201488)
+I (..\..\inc\meter_task.h)(0x5620AA06)
+I (..\..\inc\led.h)(0x53DF9BA2)
+I (..\..\ampm_lib\lib/sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+F (..\..\src\cfg_server.c)(0x563AEEEC)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\cfg_server.o --omf_browse .\debug\cfg_server.crf --depend .\debug\cfg_server.d)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_main_task.h)(0x5584E092)
+I (..\..\ampm_lib\ampm_gsm\at_command_parser.h)(0x551625F0)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_sms.h)(0x55347A7C)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_call.h)(0x55347BBE)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_ring.h)(0x55347A8E)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_startup.h)(0x55D04B80)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_dial_up.h)(0x5516266A)
+I (..\..\inc\tcp_ip_task.h)(0x557C2744)
+I (..\..\ampm_lib\PPP\ppp.h)(0x55348166)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\inc\cfg_server.h)(0x552CB072)
+I (..\..\ampm_lib\uip\resolver.h)(0x53909D12)
+I (..\..\ampm_lib\uip\uip_ppp.h)(0x53A06224)
+I (..\..\ampm_lib\uip\timer.h)(0x536D14AA)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97772)
+I (..\..\ampm_lib\uip\resolv.h)(0x4F98C5E8)
+I (..\..\ampm_lib\PPP\xtea.h)(0x4F98C5E8)
+I (..\..\driver\ampm\stm32\uart2.h)(0x5459DC60)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x54201488)
+I (..\..\driver\ampm\stm32\uart3.h)(0x5420146E)
+I (..\..\inc\meter_task.h)(0x5620AA06)
+I (..\..\inc\led.h)(0x53DF9BA2)
+I (..\..\ampm_lib\lib/sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+I (..\..\inc\sms_task.h)(0x5583D254)
+F (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_md.s)(0x55D05D3A)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x--list .\startup_stm32f10x_md.lst --xref -o .\debug\startup_stm32f10x_md.o --depend .\debug\startup_stm32f10x_md.d)
+F (..\..\CMSIS\CM3\CoreSupport\core_cm3.c)(0x4FEACCF0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\core_cm3.o --omf_browse .\debug\core_cm3.crf --depend .\debug\core_cm3.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+F (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c)(0x5583BCC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\system_stm32f10x.o --omf_browse .\debug\system_stm32f10x.crf --depend .\debug\system_stm32f10x.d)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+F (..\..\ampm_lib\lib\tick.c)(0x53A95EAC)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\tick.o --omf_browse .\debug\tick.crf --depend .\debug\tick.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib\tick.h)(0x53A97772)
+I (..\..\inc\alarm_task.h)(0x53A95F94)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+F (..\..\driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c)(0x501A155C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\stm32f10x_flash.o --omf_browse .\debug\stm32f10x_flash.crf --depend .\debug\stm32f10x_flash.d)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+F (..\..\driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c)(0x50F653B2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\stm32f10x_iwdg.o --omf_browse .\debug\stm32f10x_iwdg.crf --depend .\debug\stm32f10x_iwdg.d)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+F (..\..\driver\ampm\stm32\uart1.c)(0x557C2F28)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\uart1.o --omf_browse .\debug\uart1.crf --depend .\debug\uart1.d)
+I (..\..\driver\ampm\stm32\uart1.h)(0x53B4C156)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+F (..\..\driver\ampm\stm32\uart2.c)(0x55D2EBCC)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\uart2.o --omf_browse .\debug\uart2.crf --depend .\debug\uart2.d)
+I (..\..\driver\ampm\stm32\uart2.h)(0x5459DC60)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x54201488)
+F (..\..\driver\ampm\stm32\uart3.c)(0x55851226)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\uart3.o --omf_browse .\debug\uart3.crf --depend .\debug\uart3.d)
+I (..\..\driver\ampm\stm32\uart3.h)(0x5420146E)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x54201488)
+F (..\..\driver\ampm\stm32\spi.c)(0x55CB8C16)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\spi.o --omf_browse .\debug\spi.crf --depend .\debug\spi.d)
+I (..\..\driver\ampm\stm32\spi.h)(0x539FF536)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+F (..\..\driver\ampm\stm32\low_power_mode.c)(0x52F78380)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\low_power_mode.o --omf_browse .\debug\low_power_mode.crf --depend .\debug\low_power_mode.d)
+I (..\..\driver\ampm\stm32\low_power_mode.h)(0x52F78380)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+F (..\..\driver\ampm\stm32\rtc.c)(0x558514BC)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\rtc.o --omf_browse .\debug\rtc.crf --depend .\debug\rtc.d)
+I (..\..\driver\ampm\stm32\rtc.h)(0x53B4EA7A)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\driver\ampm\stm32\exti.h)(0x55A4ADBE)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\inc\dbg.h)(0x52D3F8AC)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4FEACCF0)
+I (..\..\ampm_lib\lib/sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+I (..\..\inc\database_app.h)(0x53A45936)
+I (..\..\ampm_lib\db\db.h)(0x55D0893A)
+I (..\..\ampm_lib\flash_mem\sst25.h)(0x55D2F4AA)
+I (..\..\driver\ampm\stm32\uart3.h)(0x5420146E)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x54201488)
+F (..\..\driver\ampm\stm32\exti.c)(0x557C2FB2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\exti.o --omf_browse .\debug\exti.crf --depend .\debug\exti.d)
+I (..\..\driver\ampm\stm32\exti.h)(0x55A4ADBE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\inc\dbg.h)(0x52D3F8AC)
+I (..\..\driver\ampm\stm32\low_power_mode.h)(0x52F78380)
+I (..\..\driver\ampm\stm32\rtc.h)(0x53B4EA7A)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+I (..\..\inc\accelerometer_task.h)(0x53953FB0)
+I (..\..\driver\ampm\stm32\spi.h)(0x539FF536)
+I (..\..\ampm_lib\accelerometer\mma7660\mma7660.h)(0x53476DF4)
+I (..\..\driver\ampm\stm32\i2c.h)(0x53953440)
+I (..\..\ampm_lib\accelerometer\xl362/xl362.h)(0x533E1D52)
+I (..\..\ampm_lib\accelerometer\xl362/xl362_io.h)(0x53AC7DD4)
+F (..\..\driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c)(0x4FEACCF0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\stm32f10x_gpio.o --omf_browse .\debug\stm32f10x_gpio.crf --depend .\debug\stm32f10x_gpio.d)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+F (..\..\driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c)(0x4FEACCF0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\stm32f10x_rcc.o --omf_browse .\debug\stm32f10x_rcc.crf --depend .\debug\stm32f10x_rcc.d)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+F (..\..\driver\ampm\stm32\FlashProg.c)(0x53DF51C8)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\flashprog.o --omf_browse .\debug\flashprog.crf --depend .\debug\flashprog.d)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\driver\ampm\stm32\flashprog.h)(0x533284E6)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+F (..\..\ampm_lib\uip\resolver.c)(0x5587D848)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\resolver.o --omf_browse .\debug\resolver.crf --depend .\debug\resolver.d)
+I (..\..\ampm_lib\uip\resolver.h)(0x53909D12)
+I (..\..\ampm_lib\uip\uip_ppp.h)(0x53A06224)
+I (..\..\ampm_lib\PPP\ppp.h)(0x55348166)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (..\..\ampm_lib\uip\timer.h)(0x536D14AA)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97772)
+I (..\..\ampm_lib\uip\resolv.h)(0x4F98C5E8)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\lib/sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+F (..\..\ampm_lib\lib\keil\Output\ampm_lib.lib)(0x53A975B4)()
+F (..\..\ampm_lib\uip-ppp-lib\Output\uip-ppp-lib.lib)(0x5534814E)()
+F (..\..\ampm_lib\uip\resolv.c)(0x54910B00)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\resolv.o --omf_browse .\debug\resolv.crf --depend .\debug\resolv.d)
+I (..\..\ampm_lib\uip\resolv.h)(0x4F98C5E8)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+F (..\..\ampm_lib\uip\timer.c)(0x536D1B70)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\timer.o --omf_browse .\debug\timer.crf --depend .\debug\timer.d)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\uip\timer.h)(0x536D14AA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97772)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+F (..\..\ampm_lib\uip\uip.c)(0x55347C68)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\uip.o --omf_browse .\debug\uip.crf --depend .\debug\uip.d)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\uip\uip_arch.h)(0x4F98C5E8)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+F (..\..\ampm_lib\uip\uip_ppp.c)(0x55347C4A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\uip_ppp.o --omf_browse .\debug\uip_ppp.crf --depend .\debug\uip_ppp.d)
+I (..\..\ampm_lib\uip\uip_ppp.h)(0x53A06224)
+I (..\..\ampm_lib\PPP\ppp.h)(0x55348166)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (..\..\ampm_lib\uip\timer.h)(0x536D14AA)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97772)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+F (..\..\ampm_lib\PPP\fcs.c)(0x4FA12F5A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\fcs.o --omf_browse .\debug\fcs.crf --depend .\debug\fcs.d)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+F (..\..\ampm_lib\PPP\ppp.c)(0x55347CB6)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\ppp.o --omf_browse .\debug\ppp.crf --depend .\debug\ppp.d)
+I (..\..\ampm_lib\PPP\ppp.h)(0x55348166)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (..\..\ampm_lib\uip\uip_ppp.h)(0x53A06224)
+I (..\..\ampm_lib\uip\timer.h)(0x536D14AA)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97772)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+F (..\..\ampm_lib\PPP\xtea.c)(0x4FA12F5A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\xtea.o --omf_browse .\debug\xtea.crf --depend .\debug\xtea.d)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+F (..\..\ampm_lib\lib\m_time.c)(0x52F25ACC)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\m_time.o --omf_browse .\debug\m_time.crf --depend .\debug\m_time.d)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+F (..\..\ampm_lib\lib\sys_time.c)(0x55851460)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\sys_time.o --omf_browse .\debug\sys_time.crf --depend .\debug\sys_time.d)
+I (..\..\ampm_lib\lib\sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+I (..\..\ampm_lib\lib\m_time.h)(0x52F25ACC)
+F (..\..\ampm_lib\lib\ampm_sprintf.c)(0x54F57948)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\ampm_sprintf.o --omf_browse .\debug\ampm_sprintf.crf --depend .\debug\ampm_sprintf.d)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+F (..\..\ampm_lib\lib\sparser.c)(0x5623B0C0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\sparser.o --omf_browse .\debug\sparser.crf --depend .\debug\sparser.d)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+F (..\..\ampm_lib\lib\sys_tick.c)(0x53749D04)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\sys_tick.o --omf_browse .\debug\sys_tick.crf --depend .\debug\sys_tick.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib\sys_tick.h)(0x534607B2)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+F (..\..\ampm_lib\lib\list.c)(0x5305B16C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\list.o --omf_browse .\debug\list.crf --depend .\debug\list.d)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+F (..\..\ampm_lib\gsm\sms\pdu.c)(0x5373735E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\pdu.o --omf_browse .\debug\pdu.crf --depend .\debug\pdu.d)
+I (..\..\ampm_lib\gsm\sms\pdu.h)(0x53736F1C)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+F (..\..\ampm_lib\ampm_gsm\ampm_gsm_call.c)(0x54F6B720)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\ampm_gsm_call.o --omf_browse .\debug\ampm_gsm_call.crf --depend .\debug\ampm_gsm_call.d)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_sms.h)(0x55347A7C)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_call.h)(0x55347BBE)
+I (..\..\ampm_lib\ampm_gsm\sms/pdu.h)(0x53736F1C)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\ampm_gsm\at_command_parser.h)(0x551625F0)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_ring.h)(0x55347A8E)
+F (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.c)(0x55D04BCE)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\ampm_gsm_common.o --omf_browse .\debug\ampm_gsm_common.crf --depend .\debug\ampm_gsm_common.d)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+F (..\..\ampm_lib\ampm_gsm\ampm_gsm_dial_up.c)(0x55347BB0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\ampm_gsm_dial_up.o --omf_browse .\debug\ampm_gsm_dial_up.crf --depend .\debug\ampm_gsm_dial_up.d)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_dial_up.h)(0x5516266A)
+F (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.c)(0x55ACAB62)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\ampm_gsm_io.o --omf_browse .\debug\ampm_gsm_io.crf --depend .\debug\ampm_gsm_io.d)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+F (..\..\ampm_lib\ampm_gsm\ampm_gsm_main_task.c)(0x55D2E38C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\ampm_gsm_main_task.o --omf_browse .\debug\ampm_gsm_main_task.crf --depend .\debug\ampm_gsm_main_task.d)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_main_task.h)(0x5584E092)
+I (..\..\ampm_lib\ampm_gsm\at_command_parser.h)(0x551625F0)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_sms.h)(0x55347A7C)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_call.h)(0x55347BBE)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_ring.h)(0x55347A8E)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_startup.h)(0x55D04B80)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_dial_up.h)(0x5516266A)
+I (..\..\inc\tcp_ip_task.h)(0x557C2744)
+I (..\..\ampm_lib\PPP\ppp.h)(0x55348166)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\ampm_lib\lib/sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+I (..\..\inc\led.h)(0x53DF9BA2)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\system_config.h)(0x563AF37E)
+F (..\..\ampm_lib\ampm_gsm\ampm_gsm_ring.c)(0x55ACAB1A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\ampm_gsm_ring.o --omf_browse .\debug\ampm_gsm_ring.crf --depend .\debug\ampm_gsm_ring.d)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_ring.h)(0x55347A8E)
+F (..\..\ampm_lib\ampm_gsm\ampm_gsm_sms.c)(0x55D04C1E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\ampm_gsm_sms.o --omf_browse .\debug\ampm_gsm_sms.crf --depend .\debug\ampm_gsm_sms.d)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_sms.h)(0x55347A7C)
+I (..\..\ampm_lib\ampm_gsm\sms/pdu.h)(0x53736F1C)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\ampm_gsm\at_command_parser.h)(0x551625F0)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_call.h)(0x55347BBE)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_ring.h)(0x55347A8E)
+F (..\..\ampm_lib\ampm_gsm\ampm_gsm_startup.c)(0x55D04C58)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\ampm_gsm_startup.o --omf_browse .\debug\ampm_gsm_startup.crf --depend .\debug\ampm_gsm_startup.d)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_startup.h)(0x55D04B80)
+F (..\..\ampm_lib\ampm_gsm\at_command_parser.c)(0x5583B660)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\at_command_parser.o --omf_browse .\debug\at_command_parser.crf --depend .\debug\at_command_parser.d)
+I (..\..\ampm_lib\ampm_gsm\at_command_parser.h)(0x551625F0)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sparser.h)(0x54F3010E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_sms.h)(0x55347A7C)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_call.h)(0x55347BBE)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_ring.h)(0x55347A8E)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_common.h)(0x5583B068)
+I (..\..\ampm_lib\ampm_gsm\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+F (..\..\ampm_lib\common\comm.c)(0x5535CFC2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\comm.o --omf_browse .\debug\comm.crf --depend .\debug\comm.d)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\driver\ampm\stm32\uart1.h)(0x53B4C156)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\system_config.h)(0x563AF37E)
+F (..\..\ampm_lib\flash_mem\sst25.c)(0x541D0D14)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\sst25.o --omf_browse .\debug\sst25.crf --depend .\debug\sst25.d)
+I (..\..\ampm_lib\flash_mem\sst25.h)(0x55D2F4AA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\driver\ampm\stm32\spi.h)(0x539FF536)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+F (..\..\ampm_lib\db\db.c)(0x55D2DC34)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\db.o --omf_browse .\debug\db.crf --depend .\debug\db.d)
+I (..\..\ampm_lib\db\db.h)(0x55D0893A)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\ampm_lib\flash_mem\sst25.h)(0x55D2F4AA)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+F (..\..\src\elster_tasks.c)(0x55CFF354)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\elster_tasks.o --omf_browse .\debug\elster_tasks.crf --depend .\debug\elster_tasks.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (..\..\driver\ampm\stm32\uart3.h)(0x5420146E)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x54201488)
+I (..\..\driver\ampm\stm32\uart2.h)(0x5459DC60)
+I (..\..\ampm_lib\lib/list.h)(0x52F26034)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\lib/sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+I (..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\ampm_lib\db\db.h)(0x55D0893A)
+I (..\..\ampm_lib\flash_mem\sst25.h)(0x55D2F4AA)
+F (..\..\..\note.txt)(0x53A98000)()
+F (..\..\ampm_lib\ftp\ftp.c)(0x563AEFF4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\ftp.o --omf_browse .\debug\ftp.crf --depend .\debug\ftp.d)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+I (..\..\ampm_lib\uip\uip_ppp.h)(0x53A06224)
+I (..\..\ampm_lib\PPP\ppp.h)(0x55348166)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\PPP\typedef.h)(0x4F98C3FE)
+I (..\..\ampm_lib\PPP\fcs.h)(0x4F98C5E8)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\..\ampm_lib\common\comm.h)(0x54F6BBBC)
+I (..\..\ampm_lib\uip\timer.h)(0x536D14AA)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97772)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\ampm_lib\ftp\ftpc.h)(0x55CCAF7C)
+I (..\..\ampm_lib\db\db.h)(0x55D0893A)
+I (..\..\ampm_lib\flash_mem\sst25.h)(0x55D2F4AA)
+I (..\..\ampm_lib\uip\resolver.h)(0x53909D12)
+I (..\..\ampm_lib\uip\resolv.h)(0x4F98C5E8)
+I (..\..\inc\tcp_ip_task.h)(0x557C2744)
+I (..\..\inc\elster_tasks.h)(0x541126C6)
+F (..\..\ampm_lib\ftp\ftpc.c)(0x55CD836C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\ftpc.o --omf_browse .\debug\ftpc.crf --depend .\debug\ftpc.d)
+I (..\..\ampm_lib\ftp\ftpc.h)(0x55CCAF7C)
+I (..\..\ampm_lib\uip\uip.h)(0x55347C5A)
+I (..\..\ampm_lib\uip-ppp-lib\uipopt.h)(0x55CEAECC)
+I (..\..\ampm_lib\uip-ppp-lib\uip-conf.h)(0x54F6730A)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\db\db.h)(0x55D0893A)
+I (..\..\ampm_lib\lib/sys_time.h)(0x55851468)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E3A)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x562688D5)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x562688D7)
+I (..\..\inc\system_config.h)(0x563AF37E)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x55D2B60E)
+I (..\..\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FEACCF0)
+I (..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x52F7837E)
+I (..\..\inc\stm32f10x_conf.h)(0x4B962424)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x527EF854)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4FEACCF0)
+I (..\..\driver\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FEACCF0)
+I (..\..\inc\hw_config.h)(0x55D21C2E)
+I (..\..\ampm_lib\flash_mem\sst25.h)(0x55D2F4AA)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\ampm_lib\ftp\petsciiconv.h)(0x527927AA)
+I (..\..\ampm_lib\ftp\memb.h)(0x52381086)
+I (..\..\ampm_lib\uip\tcpip.h)(0x53DBC7D6)
+F (..\..\ampm_lib\ftp\memb.c)(0x53EA560E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\memb.o --omf_browse .\debug\memb.crf --depend .\debug\memb.d)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\ampm_lib\ftp\memb.h)(0x52381086)
+F (..\..\ampm_lib\ftp\petsciiconv.c)(0x527927AA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\driver\STM32F10x_StdPeriph_Driver\inc -I..\..\CMSIS\CM3\CoreSupport -I..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\inc -I..\..\ampm_lib -I..\..\driver -I..\..\ampm_lib\ampm_gsm -I..\..\driver\ampm\stm32 -I..\..\ampm_lib\db -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\accelerometer\lis3dh -I..\..\ampm_lib\accelerometer\mma7660 -I..\..\ampm_lib\accelerometer -I..\..\ampm_lib\PPP -I..\..\ampm_lib\uip -I..\..\ampm_lib\uip-ppp-lib -I..\..\ampm_lib\ampm_gsm\sms -I..\..\ampm_lib\FATFS -I..\..\ampm_lib\flash_mem -I..\..\ampm_lib\common -I..\..\ampm_lib\ftp-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_MODE -DGSM_DEBUG_UART3_NC-o .\debug\petsciiconv.o --omf_browse .\debug\petsciiconv.crf --depend .\debug\petsciiconv.d)

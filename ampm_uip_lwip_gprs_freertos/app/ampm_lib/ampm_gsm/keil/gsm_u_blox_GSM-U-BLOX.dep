@@ -1,0 +1,143 @@
+Dependencies for Project 'gsm_u_blox', Target 'GSM-U-BLOX': (DO NOT MODIFY !)
+F (..\at_command_parser.c)(0x5583B660)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\..\ampm_lib -I..\..\gsm -I..\..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\flash\at_command_parser.o --omf_browse .\flash\at_command_parser.crf --depend .\flash\at_command_parser.d)
+I (..\at_command_parser.h)(0x551625F0)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/sparser.h)(0x56BD737C)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ampm_list.h)(0x56BD7352)
+I (..\..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\ampm_gsm_sms.h)(0x55347A7C)
+I (..\ampm_gsm_call.h)(0x55347BBE)
+I (..\ampm_gsm_ring.h)(0x55347A8E)
+I (..\ampm_gsm_common.h)(0x5583B068)
+I (..\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\common\comm.h)(0x54F6BBBC)
+I (..\..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+F (..\sms\pdu.c)(0x5373735E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\..\ampm_lib -I..\..\gsm -I..\..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\flash\pdu.o --omf_browse .\flash\pdu.crf --depend .\flash\pdu.d)
+I (..\sms\pdu.h)(0x53736F1C)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+F (..\ampm_gsm_call.c)(0x56BD749C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\..\ampm_lib -I..\..\gsm -I..\..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\flash\ampm_gsm_call.o --omf_browse .\flash\ampm_gsm_call.crf --depend .\flash\ampm_gsm_call.d)
+I (..\ampm_gsm_common.h)(0x5583B068)
+I (..\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/sparser.h)(0x56BD737C)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ampm_list.h)(0x56BD7352)
+I (..\..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\ampm_gsm_sms.h)(0x55347A7C)
+I (..\ampm_gsm_call.h)(0x55347BBE)
+I (..\sms/pdu.h)(0x53736F1C)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\at_command_parser.h)(0x551625F0)
+I (..\ampm_gsm_ring.h)(0x55347A8E)
+F (..\ampm_gsm_common.c)(0x55D04BCE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\..\ampm_lib -I..\..\gsm -I..\..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\flash\ampm_gsm_common.o --omf_browse .\flash\ampm_gsm_common.crf --depend .\flash\ampm_gsm_common.d)
+I (..\ampm_gsm_common.h)(0x5583B068)
+I (..\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/sparser.h)(0x56BD737C)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ampm_list.h)(0x56BD7352)
+I (..\..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+F (..\ampm_gsm_dial_up.c)(0x55347BB0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\..\ampm_lib -I..\..\gsm -I..\..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\flash\ampm_gsm_dial_up.o --omf_browse .\flash\ampm_gsm_dial_up.crf --depend .\flash\ampm_gsm_dial_up.d)
+I (..\ampm_gsm_common.h)(0x5583B068)
+I (..\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/sparser.h)(0x56BD737C)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ampm_list.h)(0x56BD7352)
+I (..\..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\ampm_gsm_dial_up.h)(0x5516266A)
+F (..\ampm_gsm_io.c)(0x55ACAB62)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\..\ampm_lib -I..\..\gsm -I..\..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\flash\ampm_gsm_io.o --omf_browse .\flash\ampm_gsm_io.crf --depend .\flash\ampm_gsm_io.d)
+I (..\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/sparser.h)(0x56BD737C)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ampm_list.h)(0x56BD7352)
+I (..\..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+F (..\ampm_gsm_ring.c)(0x55ACAB1A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\..\ampm_lib -I..\..\gsm -I..\..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\flash\ampm_gsm_ring.o --omf_browse .\flash\ampm_gsm_ring.crf --depend .\flash\ampm_gsm_ring.d)
+I (..\ampm_gsm_common.h)(0x5583B068)
+I (..\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/sparser.h)(0x56BD737C)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ampm_list.h)(0x56BD7352)
+I (..\..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\ampm_gsm_ring.h)(0x55347A8E)
+F (..\ampm_gsm_sms.c)(0x56BD74A2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\..\ampm_lib -I..\..\gsm -I..\..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\flash\ampm_gsm_sms.o --omf_browse .\flash\ampm_gsm_sms.crf --depend .\flash\ampm_gsm_sms.d)
+I (..\ampm_gsm_common.h)(0x5583B068)
+I (..\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/sparser.h)(0x56BD737C)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ampm_list.h)(0x56BD7352)
+I (..\..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\ampm_gsm_sms.h)(0x55347A7C)
+I (..\sms/pdu.h)(0x53736F1C)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\at_command_parser.h)(0x551625F0)
+I (..\ampm_gsm_call.h)(0x55347BBE)
+I (..\ampm_gsm_ring.h)(0x55347A8E)
+F (..\ampm_gsm_startup.c)(0x56BD7BB2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\..\ampm_lib -I..\..\gsm -I..\..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\flash\ampm_gsm_startup.o --omf_browse .\flash\ampm_gsm_startup.crf --depend .\flash\ampm_gsm_startup.d)
+I (..\ampm_gsm_common.h)(0x5583B068)
+I (..\ampm_gsm_io.h)(0x55347BF0)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/sparser.h)(0x56BD737C)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ampm_list.h)(0x56BD7352)
+I (..\..\..\ampm_lib\lib/sys_tick.h)(0x534607B2)
+I (..\..\..\ampm_lib\lib/data_cmp.h)(0x52F26032)
+I (..\..\..\ampm_lib\lib/ampm_sprintf.h)(0x54F57822)
+I (..\..\common\comm.h)(0x54F6BBBC)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (..\..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACC)
+I (..\ampm_gsm_startup.h)(0x55D04B80)

@@ -1,0 +1,98 @@
+Dependencies for Project 'uip-ppp-lib', Target 'uip-pp-lib': (DO NOT MODIFY !)
+F (..\uip\resolv.c)(0x54910AFE)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\PPP -I..\uip -I..\uip-ppp-lib -I..\..\ampm_lib -I..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\output\resolv.o --omf_browse .\output\resolv.crf --depend .\output\resolv.d)
+I (..\uip\resolv.h)(0x4F98C5E6)
+I (..\uip\uip.h)(0x55347C58)
+I (..\uip-ppp-lib\uipopt.h)(0x55347CD7)
+I (..\uip-ppp-lib\uip-conf.h)(0x54F67308)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\uip\tcpip.h)(0x53DBC7D5)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+F (..\uip\timer.c)(0x536D1B6E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\PPP -I..\uip -I..\uip-ppp-lib -I..\..\ampm_lib -I..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\output\timer.o --omf_browse .\output\timer.crf --depend .\output\timer.d)
+I (..\PPP\typedef.h)(0x4F98C3FC)
+I (..\uip\timer.h)(0x536D14A8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97770)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B1)
+F (..\uip\uip.c)(0x55347C66)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\PPP -I..\uip -I..\uip-ppp-lib -I..\..\ampm_lib -I..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\output\uip.o --omf_browse .\output\uip.crf --depend .\output\uip.d)
+I (..\uip\uip.h)(0x55347C58)
+I (..\uip-ppp-lib\uipopt.h)(0x55347CD7)
+I (..\uip-ppp-lib\uip-conf.h)(0x54F67308)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\uip\uip_arch.h)(0x4F98C5E6)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+F (..\uip\uip_ppp.c)(0x55347C48)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\PPP -I..\uip -I..\uip-ppp-lib -I..\..\ampm_lib -I..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\output\uip_ppp.o --omf_browse .\output\uip_ppp.crf --depend .\output\uip_ppp.d)
+I (..\uip\uip_ppp.h)(0x53A06223)
+I (..\PPP\ppp.h)(0x55347C91)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\uip\tcpip.h)(0x53DBC7D5)
+I (..\uip-ppp-lib\uipopt.h)(0x55347CD7)
+I (..\uip-ppp-lib\uip-conf.h)(0x54F67308)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\uip\uip.h)(0x55347C58)
+I (..\PPP\typedef.h)(0x4F98C3FC)
+I (..\PPP\fcs.h)(0x4F98C5E6)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACB)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\common\comm.h)(0x54F6BBBB)
+I (..\uip\timer.h)(0x536D14A8)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97770)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B1)
+F (..\PPP\fcs.c)(0x4FA12F59)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\PPP -I..\uip -I..\uip-ppp-lib -I..\..\ampm_lib -I..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\output\fcs.o --omf_browse .\output\fcs.crf --depend .\output\fcs.d)
+I (..\PPP\fcs.h)(0x4F98C5E6)
+I (..\PPP\typedef.h)(0x4F98C3FC)
+F (..\PPP\ppp.c)(0x55347CB4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\PPP -I..\uip -I..\uip-ppp-lib -I..\..\ampm_lib -I..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\output\ppp.o --omf_browse .\output\ppp.crf --depend .\output\ppp.d)
+I (..\PPP\ppp.h)(0x55347C91)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\uip\tcpip.h)(0x53DBC7D5)
+I (..\uip-ppp-lib\uipopt.h)(0x55347CD7)
+I (..\uip-ppp-lib\uip-conf.h)(0x54F67308)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\uip\uip.h)(0x55347C58)
+I (..\PPP\typedef.h)(0x4F98C3FC)
+I (..\PPP\fcs.h)(0x4F98C5E6)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACB)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\common\comm.h)(0x54F6BBBB)
+I (..\uip\uip_ppp.h)(0x53A06223)
+I (..\uip\timer.h)(0x536D14A8)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97770)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B1)
+F (..\PPP\xtea.c)(0x4FA12F59)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\PPP -I..\uip -I..\uip-ppp-lib -I..\..\ampm_lib -I..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\output\xtea.o --omf_browse .\output\xtea.crf --depend .\output\xtea.d)
+I (..\PPP\typedef.h)(0x4F98C3FC)
+F (..\uip\resolver.c)(0x55347C7D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\PPP -I..\uip -I..\uip-ppp-lib -I..\..\ampm_lib -I..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\output\resolver.o --omf_browse .\output\resolver.crf --depend .\output\resolver.d)
+I (..\uip\resolver.h)(0x53909D10)
+I (..\uip\uip_ppp.h)(0x53A06223)
+I (..\PPP\ppp.h)(0x55347C91)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\uip\tcpip.h)(0x53DBC7D5)
+I (..\uip-ppp-lib\uipopt.h)(0x55347CD7)
+I (..\uip-ppp-lib\uip-conf.h)(0x54F67308)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\uip\uip.h)(0x55347C58)
+I (..\PPP\typedef.h)(0x4F98C3FC)
+I (..\PPP\fcs.h)(0x4F98C5E6)
+I (..\..\ampm_lib\lib/ringbuf.h)(0x52F25ACB)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\common\comm.h)(0x54F6BBBB)
+I (..\uip\timer.h)(0x536D14A8)
+I (..\..\ampm_lib\lib/tick.h)(0x53A97770)
+I (..\uip\resolv.h)(0x4F98C5E6)
+I (..\..\ampm_lib\lib/sys_tick.h)(0x534607B1)
+I (..\..\ampm_lib\lib/sys_time.h)(0x545B4E3C)
+I (C:\Keil\ARM\ARMCC\include\time.h)(0x51C7D364)
+I (..\..\ampm_lib\gps/gps.h)(0x53A98E38)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\ctype.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\limits.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7D364)
+F (..\uip\tcpip.c)(0x55347C6F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\PPP -I..\uip -I..\uip-ppp-lib -I..\..\ampm_lib -I..\common-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\output\tcpip.o --omf_browse .\output\tcpip.crf --depend .\output\tcpip.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (..\uip\uip.h)(0x55347C58)
+I (..\uip-ppp-lib\uipopt.h)(0x55347CD7)
+I (..\uip-ppp-lib\uip-conf.h)(0x54F67308)
+I (..\uip\tcpip.h)(0x53DBC7D5)
