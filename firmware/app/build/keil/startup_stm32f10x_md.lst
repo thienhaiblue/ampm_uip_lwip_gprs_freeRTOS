@@ -72,26 +72,26 @@ ARM Macro Assembler    Page 2
    41 00000200         ;   <o>  Heap Size (in Bytes) <0x0-0xFFFFFFFF:8>
    42 00000200         ; </h>
    43 00000200         
-   44 00000200 00000000 
+   44 00000200 00000A00 
                        Heap_Size
-                               EQU              0x00000000
+                               EQU              0x00000A00
    45 00000200         
    46 00000200                 AREA             HEAP, NOINIT, READWRITE, ALIGN=
 3
    47 00000000         __heap_base
    48 00000000         Heap_Mem
                                SPACE            Heap_Size
-   49 00000000         __heap_limit
-   50 00000000         
-   51 00000000                 IMPORT           xPortPendSVHandler
-   52 00000000                 IMPORT           xPortSysTickHandler
-   53 00000000                 IMPORT           vPortSVCHandler
-   54 00000000                 PRESERVE8
-   55 00000000                 THUMB
-   56 00000000         
-   57 00000000         
-   58 00000000         ; Vector Table Mapped to Address 0 at Reset
-   59 00000000                 AREA             RESET, DATA, READONLY
+   49 00000A00         __heap_limit
+   50 00000A00         
+   51 00000A00                 IMPORT           xPortPendSVHandler
+   52 00000A00                 IMPORT           xPortSysTickHandler
+   53 00000A00                 IMPORT           vPortSVCHandler
+   54 00000A00                 PRESERVE8
+   55 00000A00                 THUMB
+   56 00000A00         
+   57 00000A00         
+   58 00000A00         ; Vector Table Mapped to Address 0 at Reset
+   59 00000A00                 AREA             RESET, DATA, READONLY
    60 00000000                 EXPORT           __Vectors
    61 00000000                 EXPORT           __Vectors_End
    62 00000000                 EXPORT           __Vectors_Size
@@ -542,7 +542,7 @@ Symbol: __heap_base
       At line 288 in file ..\..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\ar
 m\startup_stm32f10x_md.s
 Comment: __heap_base used once
-__heap_limit 00000000
+__heap_limit 00000A00
 
 Symbol: __heap_limit
    Definitions
@@ -1314,7 +1314,7 @@ m\startup_stm32f10x_md.s
 ARM Macro Assembler    Page 1 Alphabetic symbol ordering
 Absolute symbols
 
-Heap_Size 00000000
+Heap_Size 00000A00
 
 Symbol: Heap_Size
    Definitions

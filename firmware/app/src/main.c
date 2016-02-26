@@ -36,41 +36,97 @@
 #include "lwip/inet.h"
 #include "adc_task.h"
 #include "DTMF_app.h"
-
+#include "ampm_ff/ampm_ff.h"
+/* wolfSSL includes. */
+#include "wolfssl/ssl.h"
 #define main_GSM_GPRS_PRIORITY				( tskIDLE_PRIORITY + 1 )
 /* The check task uses the sprintf function so requires a little more stack. */
 #define main_GSM_GPRS_STACK_SIZE			( 128 )
 
 #define MAIN_Info(...)  //DbgCfgPrintf(__VA_ARGS__)
 
-const char *sendfile = "\
------BEGIN CERTIFICATE-----\n\
-MIIEqjCCA5KgAwIBAgIJANmAOsPS9No3MA0GCSqGSIb3DQEBCwUAMIGUMQswCQYD\r\n\
-VQQGEwJVUzEQMA4GA1UECAwHTW9udGFuYTEQMA4GA1UEBwwHQm96ZW1hbjERMA8G\r\n\
-A1UECgwIU2F3dG9vdGgxEzARBgNVBAsMCkNvbnN1bHRpbmcxGDAWBgNVBAMMD3d3\r\n\
-dy53b2xmc3NsLmNvbTEfMB0GCSqGSIb3DQEJARYQaW5mb0B3b2xmc3NsLmNvbTAe\r\n\
-Fw0xNTA1MDcxODIxMDFaFw0xODAxMzExODIxMDFaMIGUMQswCQYDVQQGEwJVUzEQ\r\n\
-MA4GA1UECAwHTW9udGFuYTEQMA4GA1UEBwwHQm96ZW1hbjERMA8GA1UECgwIU2F3\r\n\
-dG9vdGgxEzARBgNVBAsMCkNvbnN1bHRpbmcxGDAWBgNVBAMMD3d3dy53b2xmc3Ns\r\n\
-LmNvbTEfMB0GCSqGSIb3DQEJARYQaW5mb0B3b2xmc3NsLmNvbTCCASIwDQYJKoZI\r\n\
-hvcNAQEBBQADggEPADCCAQoCggEBAL8Myi0Ush6EQlvNOB9K8k11EPG2NZ/fyn0D\r\n\
-mNOs3gNm7irx2LB9bgdUCxCYIU2AyxIg58xP3kV9yXJ3MurKkLtpUhADL6jzlcXx\r\n\
-i2JWG+9nb6QQQZWtCpvjpcCw0nB2UDBbqOgILHztp6J6jTgpHKzH7fJ8lbCVgn1J\r\n\
-XDjNdyXvvYB1U5Q8PcpjW58VtdMdEy8Z0TzbdjrMuH3J5cLX2kBv2CHccxtCLVOc\r\n\
-/hr8fat6Nj+Y3oR8BWfOahQ4h6nxjLVoy2h/cSAr9aBj9VYvoybSt2+xWhfXOJkI\r\n\
-/pNYb/7DE0kIFgunTWcAUjFnI06Y7VFFHbkE2Qvs2CizS73tNnkCAwEAAaOB/DCB\r\n\
-+TAdBgNVHQ4EFgQUJ45nEXTDJh0/7TNjs6TYHTDl6NUwgckGA1UdIwSBwTCBvoAU\r\n\
-J45nEXTDJh0/7TNjs6TYHTDl6NWhgZqkgZcwgZQxCzAJBgNVBAYTAlVTMRAwDgYD\r\n\
-VQQIDAdNb250YW5hMRAwDgYDVQQHDAdCb3plbWFuMREwDwYDVQQKDAhTYXd0b290\r\n\
-aDETMBEGA1UECwwKQ29uc3VsdGluZzEYMBYGA1UEAwwPd3d3LndvbGZzc2wuY29t\r\n\
-MR8wHQYJKoZIhvcNAQkBFhBpbmZvQHdvbGZzc2wuY29tggkA2YA6w9L02jcwDAYD\r\n\
-VR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAeq9EO6pvU0KyM6pDX1Yw07mW\r\n\
-C5pVWjkqC07kLvGVZsmGNoKNY3xNou5IugPHkNenxnRgSF8xovlePsOC4eUvQYGD\r\n\
-KSV50VMAaTztCjA7QR2SoSyonSzjI4d54FVukahQ2kYvwiBQPitHlxSwfQS6RVHQ\r\n\
-buFaokuEnE3NhQT5KDGCk7zHWUmRA+jfauRWrWrLHw035F6955/V7J08GCWb8S9Q\r\n\
-fesxy/FjIp1X/POEIBrGB4eSJp4VGFkzBtz7sLZ2XfHBL8gvYpzA1t7rZXfzXKbD\r\n\
-iCeWdbT0VM3/LSEulvAHc0vpk5KQ3mLZozusbiRfJ0qzlHD/MBfnfjKPZbd1WA==\r\n\
+const char *ca_cert = "\
+-----BEGIN CERTIFICATE-----\r\n\
+MIIE0zCCA7ugAwIBAgIQGNrRniZ96LtKIVjNzGs7SjANBgkqhkiG9w0BAQUFADCB\r\n\
+yjELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQL\r\n\
+ExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMjAwNiBWZXJp\r\n\
+U2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDEzxW\r\n\
+ZXJpU2lnbiBDbGFzcyAzIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0\r\n\
+aG9yaXR5IC0gRzUwHhcNMDYxMTA4MDAwMDAwWhcNMzYwNzE2MjM1OTU5WjCByjEL\r\n\
+MAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZW\r\n\
+ZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMjAwNiBWZXJpU2ln\r\n\
+biwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDEzxWZXJp\r\n\
+U2lnbiBDbGFzcyAzIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0aG9y\r\n\
+aXR5IC0gRzUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCvJAgIKXo1\r\n\
+nmAMqudLO07cfLw8RRy7K+D+KQL5VwijZIUVJ/XxrcgxiV0i6CqqpkKzj/i5Vbex\r\n\
+t0uz/o9+B1fs70PbZmIVYc9gDaTY3vjgw2IIPVQT60nKWVSFJuUrjxuf6/WhkcIz\r\n\
+SdhDY2pSS9KP6HBRTdGJaXvHcPaz3BJ023tdS1bTlr8Vd6Gw9KIl8q8ckmcY5fQG\r\n\
+BO+QueQA5N06tRn/Arr0PO7gi+s3i+z016zy9vA9r911kTMZHRxAy3QkGSGT2RT+\r\n\
+rCpSx4/VBEnkjWNHiDxpg8v+R70rfk/Fla4OndTRQ8Bnc+MUCH7lP59zuDMKz10/\r\n\
+NIeWiu5T6CUVAgMBAAGjgbIwga8wDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8E\r\n\
+BAMCAQYwbQYIKwYBBQUHAQwEYTBfoV2gWzBZMFcwVRYJaW1hZ2UvZ2lmMCEwHzAH\r\n\
+BgUrDgMCGgQUj+XTGoasjY5rw8+AatRIGCx7GS4wJRYjaHR0cDovL2xvZ28udmVy\r\n\
+aXNpZ24uY29tL3ZzbG9nby5naWYwHQYDVR0OBBYEFH/TZafC3ey78DAJ80M5+gKv\r\n\
+MzEzMA0GCSqGSIb3DQEBBQUAA4IBAQCTJEowX2LP2BqYLz3q3JktvXf2pXkiOOzE\r\n\
+p6B4Eq1iDkVwZMXnl2YtmAl+X6/WzChl8gGqCBpH3vn5fJJaCGkgDdk+bW48DW7Y\r\n\
+5gaRQBi5+MHt39tBquCWIMnNZBU4gcmU7qKEKQsTb47bDN0lAtukixlE0kF6BWlK\r\n\
+WE9gyn6CagsCqiUXObXbf+eEZSqVir2G3l6BFoMtEMze/aiCKm0oHw0LxOXnGiYZ\r\n\
+4fQRbxC1lfznQgUy286dUV4otp6F01vvpX1FQHKOtw5rDgb7MzVIcbidJ4vEZV8N\r\n\
+hnacRHr2lVz2XTIIM6RUthg/aFzyQkqFOFSDX9HoLPKsEdao7WNq\r\n\
 -----END CERTIFICATE-----\
+";
+
+const char *server_cert = "\
+-----BEGIN CERTIFICATE-----\r\n\
+MIIDWTCCAkGgAwIBAgIUWYCxn9tcU4UyrW1olimQCgU85BcwDQYJKoZIhvcNAQEL\r\n\
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g\r\n\
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTE2MDEyOTE4MjMz\r\n\
+N1oXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0\r\n\
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJwJA0KJ6EnDJv/uvm6C\r\n\
+WTuUstTEebpaLzsjm/sjkjuJQdkcaotFlSAghhWGrX2QEzW+OqZ3d+61tWHuXBzn\r\n\
+knFE1JxhsQN2xu9bFWGCXe8FFLg6n3vjH93JCG9JmAErCwzSjIm8xmX0nZFzVgk8\r\n\
+AzMfqSQYZtguGJwKELGEZhMJrwmyM4v+DD+/fQbwyoxsp3tWQ9DmkR1dsvXfA2BA\r\n\
+dkUsS3YC6jXRNimqGDAw+nllzWUM4TK4jQY1pNypVHKVth/15aSb3eLFJeWylv2M\r\n\
+qnZDS3cdApiZ+ss+I6nHJPAMDkfQIPBsEnq/w1W4Umz5eRfuUZmz1fyfnF13U6f5\r\n\
+YPcCAwEAAaNgMF4wHwYDVR0jBBgwFoAUkNH8iRp4miRwAJ9TS5ihy2CaDRMwHQYD\r\n\
+VR0OBBYEFG+Y9RwubLZECJAORAIuIAlpsa2sMAwGA1UdEwEB/wQCMAAwDgYDVR0P\r\n\
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQAEfFw3d97C/lu7eathAqIEI3Hh\r\n\
++hWNHwn5OFvQDpseGL8cL6Nilawvb9ol3x2VMSg0UJTz7K+M5PsWu64l58TyJT1o\r\n\
+g5oAJJTFGXf9eIyWvr4X4bndCHttlICMmuUmoknY9sMRBb8GR15v00z3pWaXmi+O\r\n\
+qVqnPMRstKo0wdBgUsYsvtz2TZl2yDo0p5X/9YqDfWyjDhNGQFLE0e3dgqzWS+qg\r\n\
+QmcKOR0dbp/SRDhg12l7pJKznVfgxabTtaadH5ZKhQHHGx2z9BMM88qdr5ifJL2I\r\n\
+RDRWzFfR2WEyGEauP9X27MZRyQEqVNLOkP574K2sONlnS7zyNgDO7m9FzpcB\r\n\
+-----END CERTIFICATE-----\
+";
+
+const char *server_key = "\
+-----BEGIN RSA PRIVATE KEY-----\r\n\
+MIIEowIBAAKCAQEAnAkDQonoScMm/+6+boJZO5Sy1MR5ulovOyOb+yOSO4lB2Rxq\r\n\
+i0WVICCGFYatfZATNb46pnd37rW1Ye5cHOeScUTUnGGxA3bG71sVYYJd7wUUuDqf\r\n\
+e+Mf3ckIb0mYASsLDNKMibzGZfSdkXNWCTwDMx+pJBhm2C4YnAoQsYRmEwmvCbIz\r\n\
+i/4MP799BvDKjGyne1ZD0OaRHV2y9d8DYEB2RSxLdgLqNdE2KaoYMDD6eWXNZQzh\r\n\
+MriNBjWk3KlUcpW2H/XlpJvd4sUl5bKW/YyqdkNLdx0CmJn6yz4jqcck8AwOR9Ag\r\n\
+8GwSer/DVbhSbPl5F+5RmbPV/J+cXXdTp/lg9wIDAQABAoIBAGcD/Eb9zYKFeUYX\r\n\
+VVqYbFlNvxOB8+v4hp5A0EZqIa103Sh9/kmc0uu3DU9A72GqsUQWJ5qn3WKYTPwu\r\n\
+5lme+awWiVgFl1x2GrkEJYWPEH0xmZBYA9tDBFLk2tC+gcCjrlP03hxBqaq+aRkS\r\n\
+UIcgO+yQxpayFZQ8OrsqWgMZKlr+TYh+2BhEhJrHadjR2uDpTDzG1DJp/l/n0/fz\r\n\
+2um9fAnbfIO64tkDQkoH2WsuKS3+e7EOYLhH7EW5AT6OWzssBEKajItLv1fj1RvK\r\n\
+7V6uSBc4EvoZOsLDviYQt0O+cMfBBVF6V7ZvDr7Q9dgpyv7sCiqvfCiNwuqpqvB8\r\n\
+hqaADMECgYEA0SQRn8biYoVsbX9BJAPXREKFn982aoQ3qkWBzbysRN4ovBCw0NWu\r\n\
+R88nr4nullivuX8QlZrSB08/MveW0b/75iv7UZHjeujh+Wu2URi5sBwzharF8Fye\r\n\
+6kok/BMn8viQ5dNuFUH9ZtqU6/hFUxpN61QENZ8sYQE3BDuvE4DvI98CgYEAvv7m\r\n\
+mk6hU3GxJ57/1ZDpwG6LGkTc2h7l+DfnJPHXazkyztmlFQWBUSdCRqWBJwUkTlt0\r\n\
+G6cvaWZe8Dqa7+K4G9X6EBMMw/yvVprhsE/21wJIIhWiRzMpeA7X5ft0WxYGGPA1\r\n\
+Nt443p2jA/5J3rrhFLH9PRZ3xOzBbbuL2+ItpekCgYBIfOLq6SkwEqSpMxEl5Xro\r\n\
+OtJLvjcDJj6Q8rRx1bIz0Hh37qUKTPWyB/fuXLVoQObvOT5LTDT9uZbjGHOa0ZsC\r\n\
+hT3/YLxirnMcWxv+8b3yb2PgMXeXvtKJzBcTk6QmD8dRET43ef7Vdm9ldlC45AYb\r\n\
+yawH1dqw6JXkDre439iDKwKBgH4cfxV6P8mCM3Au60wP4FhgZVbWC2G2rzBDcUsS\r\n\
+qKOy49pzGS6VMPrtyjQtiebC3WMjvbmYnZShtKQ4fh9Q+zHeCrxcZ7xs9zVfFRA+\r\n\
+7ISxjAF9eWY74PDWFDZV31FZbHNBAFIXT0OmoIG9gPchPAdXMxgH4tNTZLDY+hMY\r\n\
+9/0pAoGBAJSjYTNb/nnJuoH7MZKir0GdznXytPUgzWItxpZDZo0fkgglU8aoa4sM\r\n\
+7tSnqXJXHPVO1OfSvHqFp5+FWjjNX4hu4wbzUkbupHRAQXlskhcr70mMEDnHGKWo\r\n\
+15y/1G/bdvpMRmsKj6vi5p1wxrE7wKc/joYDhDbT5epI0hk+puOB\r\n\
+-----END RSA PRIVATE KEY-----\
 ";
 
 #define SMS_TIME_CHECK 600
@@ -111,6 +167,7 @@ void SysInit(void)
 {
 	uint32_t i,j,len;
 	uint8_t buf[32];
+	AMPM_FIL fil;
 	//AMPM_FIL fsFile;
 	__enable_irq();
 	SystemInit();
@@ -150,6 +207,37 @@ void SysInit(void)
 	ADC_TaskInit();
 /*GSM Init*/
  	USART1_Init(SystemCoreClock,__USART1_BAUDRATE);
+	
+	ampm_f_init();
+	if(ampm_f_open(&fil,"ca-cert.pem",AMPM_FA_READ) != FR_OK)
+	{
+		ampm_f_close(&fil);
+		if(ampm_f_open(&fil,"ca-cert.pem",AMPM_FA_CREATE_ALWAYS) == FR_OK)
+		{
+			ampm_f_write(&fil,(char *)ca_cert,strlen(ca_cert),&i);
+		}
+	}
+	ampm_f_close(&fil);
+	if(ampm_f_open(&fil,"server-cert.pem",AMPM_FA_READ) != FR_OK)
+	{
+		ampm_f_close(&fil);
+		if(ampm_f_open(&fil,"server-cert.pem",AMPM_FA_CREATE_ALWAYS) == FR_OK)
+		{
+			ampm_f_write(&fil,(char *)server_cert,strlen(server_cert),&i);
+		}
+	}
+	ampm_f_close(&fil);
+	if(ampm_f_open(&fil,"server-key.pem",AMPM_FA_READ) != FR_OK)
+	{
+		ampm_f_close(&fil);
+		if(ampm_f_open(&fil,"server-key.pem",AMPM_FA_CREATE_ALWAYS) == FR_OK)
+		{
+			ampm_f_write(&fil,(char *)server_key,strlen(server_key),&i);
+		}
+	}
+	ampm_f_close(&fil);
+	
+	
 }
 
 
@@ -226,6 +314,74 @@ void vAmpmNetTestTask1( void *pvParameters )
 		}
 	}
 }
+
+
+//void vAmpmNetTestTask2( void *pvParameters )
+//{
+//	int xClientSocket, newconn, size;
+//	char *pt =  pvParameters;
+//  struct sockaddr_in xConnection;
+//	WOLFSSL* xWolfSSL_Object;
+//	WOLFSSL_CTX* xWolfSSL_ClientContext = NULL;
+//	BaseType_t lReturned;
+//	uint32_t lBytes;
+//	char cString[ 50 ];
+//	uint8_t cReceivedString[60];
+//	/* Initialise wolfSSL.  This must be done before any other wolfSSL functions
+//	are called. */
+//	wolfSSL_Init();
+//	xWolfSSL_ClientContext = wolfSSL_CTX_new( wolfTLSv1_2_client_method() );
+//	wolfSSL_CTX_load_verify_locations(xWolfSSL_ClientContext, "ca-cert.pem", 0);
+//	wolfSSL_CTX_use_certificate_file(xWolfSSL_ClientContext, "server-cert.pem", SSL_FILETYPE_PEM);
+//	wolfSSL_CTX_use_PrivateKey_file(xWolfSSL_ClientContext, "server-key.pem", SSL_FILETYPE_PEM);
+//	/* bind to port 80 at any interface */
+//  /* Set family and port for client socket. */
+//	memset( ( void * ) &xConnection, 0x00, sizeof( struct sockaddr_in ) );
+//	xConnection.sin_family = AF_INET;
+//	xConnection.sin_addr.s_addr = inet_addr("52.32.95.12");
+//	xConnection.sin_port = htons( 8883 );
+//	/* create a TCP socket */
+//  xClientSocket = socket(AF_INET, SOCK_STREAM, 0);
+//	
+//	connect(xClientSocket,(struct sockaddr *)&xConnection,sizeof(xConnection));
+//	
+//	/* The connect was successful.  Create a wolfSSL object to associate
+//			with this connection. */
+//	//xWolfSSL_Object = wolfSSL_new( xWolfSSL_ClientContext );
+//	
+//		if( xWolfSSL_Object != NULL )
+//		{
+//			/* Associate the created wolfSSL object with the connected
+//			socket. */
+//			lReturned = wolfSSL_set_fd( xWolfSSL_Object, xClientSocket );
+//			configASSERT( lReturned == SSL_SUCCESS );
+
+//			do
+//			{
+//				/* Create the string that is sent to the secure server. */
+//				uint8_t cString[28] = { 0x10, 0x1A, 0x00, 0x04, 0x4D, 0x51, 0x54, 0x54, 0x04, 0x02, 0x00, 0x3C, 0x00, 0x0E, 0x4D, 0x51, 0x54, 0x54, 0x5F, 0x46, 0x58, 0x5F, 0x43, 0x6C, 0x69, 0x65, 0x6E, 0x74};
+//				/* The next line is the secure equivalent of the standard
+//				sockets call:
+//				lReturned = send( xClientSocket, cString, strlen( cString ) + 1, 0 ); */
+//				//lReturned = wolfSSL_write(xWolfSSL_Object, cString, sizeof(cString) + 1);
+
+
+//				/* Short delay to prevent the messages streaming up the
+//				console too quickly. */
+//				vTaskDelay( 50 );
+////				lBytes = wolfSSL_read(xWolfSSL_Object, cReceivedString, sizeof(cReceivedString));
+
+////				/* Print the received characters. */
+////				if (lBytes > 0)
+////				{
+////					printf("Received by the secure server: %s\r\n", cReceivedString);
+////				}
+
+//			} while( 1);
+//		}
+//		while(1);
+//		wolfSSL_free( xWolfSSL_Object );
+//}
 
 
 
