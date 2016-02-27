@@ -1,0 +1,15 @@
+.\flash\memory.o: ..\..\wolfssl\wolfcrypt\src\memory.c
+.\flash\memory.o: ..\..\wolfssl\wolfssl/wolfcrypt/settings.h
+.\flash\memory.o: ..\..\wolfssl\wolfssl/wolfcrypt/visibility.h
+.\flash\memory.o: ..\..\wolfssl\wolfssl/wolfcrypt/memory.h
+.\flash\memory.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\flash\memory.o: ..\..\wolfssl\wolfssl/wolfcrypt/types.h
+.\flash\memory.o: ..\..\wolfssl\wolfssl/wolfcrypt/wc_port.h
+.\flash\memory.o: ..\..\wolfssl\wolfssl/wolfcrypt/types.h
+.\flash\memory.o: ..\..\ampm_lib\ampm_ff/ampm_ff_port.h
+.\flash\memory.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\flash\memory.o: ..\..\ampm_lib\flash_mem\sst25.h
+.\flash\memory.o: ..\..\ampm_lib\ampm_ff/ampm_ff.h
+.\flash\memory.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\flash\memory.o: C:\Keil\ARM\ARMCC\bin\..\include\ctype.h
+.\flash\memory.o: ..\..\wolfssl\wolfssl/wolfcrypt/error-crypt.h

@@ -1,0 +1,16 @@
+.\flash\md4.o: ..\..\wolfssl\wolfcrypt\src\md4.c
+.\flash\md4.o: ..\..\wolfssl\wolfssl/wolfcrypt/settings.h
+.\flash\md4.o: ..\..\wolfssl\wolfssl/wolfcrypt/visibility.h
+.\flash\md4.o: ..\..\wolfssl\wolfssl/wolfcrypt/md4.h
+.\flash\md4.o: ..\..\wolfssl\wolfssl/wolfcrypt/types.h
+.\flash\md4.o: ..\..\wolfssl\wolfssl/wolfcrypt/wc_port.h
+.\flash\md4.o: ..\..\wolfssl\wolfssl/wolfcrypt/types.h
+.\flash\md4.o: ..\..\ampm_lib\ampm_ff/ampm_ff_port.h
+.\flash\md4.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\flash\md4.o: ..\..\ampm_lib\flash_mem\sst25.h
+.\flash\md4.o: ..\..\ampm_lib\ampm_ff/ampm_ff.h
+.\flash\md4.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\flash\md4.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\flash\md4.o: C:\Keil\ARM\ARMCC\bin\..\include\ctype.h
+.\flash\md4.o: ..\..\wolfssl\wolfcrypt/src/misc.c
+.\flash\md4.o: ..\..\wolfssl\wolfssl/wolfcrypt/misc.h

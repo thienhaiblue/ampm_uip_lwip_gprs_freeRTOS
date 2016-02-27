@@ -1,0 +1,16 @@
+.\flash\coding.o: ..\..\wolfssl\wolfcrypt\src\coding.c
+.\flash\coding.o: ..\..\wolfssl\wolfssl/wolfcrypt/settings.h
+.\flash\coding.o: ..\..\wolfssl\wolfssl/wolfcrypt/visibility.h
+.\flash\coding.o: ..\..\wolfssl\wolfssl/wolfcrypt/coding.h
+.\flash\coding.o: ..\..\wolfssl\wolfssl/wolfcrypt/types.h
+.\flash\coding.o: ..\..\wolfssl\wolfssl/wolfcrypt/wc_port.h
+.\flash\coding.o: ..\..\wolfssl\wolfssl/wolfcrypt/types.h
+.\flash\coding.o: ..\..\ampm_lib\ampm_ff/ampm_ff_port.h
+.\flash\coding.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\flash\coding.o: ..\..\ampm_lib\flash_mem\sst25.h
+.\flash\coding.o: ..\..\ampm_lib\ampm_ff/ampm_ff.h
+.\flash\coding.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\flash\coding.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\flash\coding.o: C:\Keil\ARM\ARMCC\bin\..\include\ctype.h
+.\flash\coding.o: ..\..\wolfssl\wolfssl/wolfcrypt/error-crypt.h
+.\flash\coding.o: ..\..\wolfssl\wolfssl/wolfcrypt/logging.h

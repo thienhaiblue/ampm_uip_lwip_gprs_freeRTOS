@@ -17,6 +17,7 @@ typedef enum{
 	BGS2_E,
 	BGS2_W,
 	M95,
+	SIM900,
 	UBLOX_G100,
 }AMPM_GSM_MODULE_TYPE;
 

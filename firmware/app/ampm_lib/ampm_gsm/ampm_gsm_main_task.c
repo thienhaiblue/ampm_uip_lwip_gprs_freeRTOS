@@ -110,6 +110,21 @@ const uint8_t ampm_AtGsmCmdStartM95[] = {
 	@@S"
 };
 
+const uint8_t ampm_AtGsmCmdStartSIM900[] = {
+	"@@0$AT\r$0$0$OK$NOT USE$3$1000$100\r\n\
+	@@D$ATZ\r$\r\n\
+	@@D$ATI\r$\r\n\
+	@@D$AT&C1\r$\r\n\
+	@@D$AT+CMGF=1\r$\r\n\
+	@@D$AT+CNMI=2,1,0,0,0\r$\r\n\
+	@@D$AT+CLIP=1\r$\r\n\
+	@@0$AT+CREG?\r$0$0$+CREG: 0,1$NOT USE$20$3000$100\r\n\
+	@@0$AT+CGSN\r$+CGSN\r\r\n$1$OK$ERROR$3$1000$100\r\n\
+	@@0$AT+COPS=0,2\r$0$0$OK$NOT USE$20$3000$100\r\n\
+	@@G$AT+CSQ\r$+CSQ:$4$OK$ERROR$1$2000$100\r\n\
+	@@S"
+};
+
 const uint8_t ampm_AtGsmCmdStartUbloxG100[] = {
 	"@@0$AT\r$0$0$OK$NOT USE$3$1000$100\r\n\
 	@@D$ATZ\r$\r\n\
@@ -573,6 +588,7 @@ COMPARE_TYPE cmpBG2_E;
 COMPARE_TYPE cmpM95;
 COMPARE_TYPE cmpUbloxG100;
 COMPARE_TYPE cmp;
+COMPARE_TYPE cmpSIM900;
 
 uint32_t Ampm_GSM_GetATI(uint16_t cnt,uint8_t c)
 {
@@ -585,6 +601,7 @@ uint32_t Ampm_GSM_GetATI(uint16_t cnt,uint8_t c)
 		InitFindData(&cmpBGS2_E,"BGS2-E");
 		InitFindData(&cmpBG2_E,"BG2-E");
 		InitFindData(&cmpM95,"M95");
+		InitFindData(&cmpSIM900,"SIM900");
 		InitFindData(&cmpUbloxG100,"G100");
 	}
 	if(FindData(&cmp,c) == 0 || cnt >= 45)
@@ -627,6 +644,14 @@ uint32_t Ampm_GSM_GetATI(uint16_t cnt,uint8_t c)
 		ampm_AtGsmCmdStart_pt = (uint8_t *)ampm_AtGsmCmdStartM95;
 		AMPM_GSM_LIB_DBG("\r\n YOUR MODULE IS:Got ATI:%s \r\n",cmpM95.buff);
 		ampmGsmModuleType = M95;
+		return 0;
+	}
+	if(FindData(&cmpSIM900,c) == 0)
+	{
+		PPP_SetAuthenticationLogin(1);
+		ampm_AtGsmCmdStart_pt = (uint8_t *)ampm_AtGsmCmdStartSIM900;
+		AMPM_GSM_LIB_DBG("\r\n YOUR MODULE IS:Got ATI:%s \r\n",cmpSIM900.buff);
+		ampmGsmModuleType = SIM900;
 		return 0;
 	}
 	if(FindData(&cmpUbloxG100,c) == 0)

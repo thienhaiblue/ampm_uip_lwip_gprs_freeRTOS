@@ -1,0 +1,12 @@
+.\flash\port.o: ..\..\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM_CM3\port.c
+.\flash\port.o: ..\..\FreeRTOS\FreeRTOS\Source\include\FreeRTOS.h
+.\flash\port.o: C:\Keil\ARM\ARMCC\bin\..\include\stddef.h
+.\flash\port.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\flash\port.o: ..\..\inc\FreeRTOSConfig.h
+.\flash\port.o: ..\..\FreeRTOS\FreeRTOS\Source\include\projdefs.h
+.\flash\port.o: ..\..\FreeRTOS\FreeRTOS\Source\include\portable.h
+.\flash\port.o: ..\..\FreeRTOS\FreeRTOS\Source\include\deprecated_definitions.h
+.\flash\port.o: ..\..\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h
+.\flash\port.o: ..\..\FreeRTOS\FreeRTOS\Source\include\mpu_wrappers.h
+.\flash\port.o: ..\..\FreeRTOS\FreeRTOS\Source\include\task.h
+.\flash\port.o: ..\..\FreeRTOS\FreeRTOS\Source\include\list.h

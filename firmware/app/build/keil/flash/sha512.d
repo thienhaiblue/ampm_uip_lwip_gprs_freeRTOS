@@ -1,0 +1,14 @@
+.\flash\sha512.o: ..\..\wolfssl\wolfcrypt\src\sha512.c
+.\flash\sha512.o: ..\..\wolfssl\wolfssl/wolfcrypt/settings.h
+.\flash\sha512.o: ..\..\wolfssl\wolfssl/wolfcrypt/visibility.h
+.\flash\sha512.o: ..\..\wolfssl\wolfssl/wolfcrypt/sha512.h
+.\flash\sha512.o: ..\..\wolfssl\wolfssl/wolfcrypt/types.h
+.\flash\sha512.o: ..\..\wolfssl\wolfssl/wolfcrypt/wc_port.h
+.\flash\sha512.o: ..\..\wolfssl\wolfssl/wolfcrypt/types.h
+.\flash\sha512.o: ..\..\ampm_lib\ampm_ff/ampm_ff_port.h
+.\flash\sha512.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\flash\sha512.o: ..\..\ampm_lib\flash_mem\sst25.h
+.\flash\sha512.o: ..\..\ampm_lib\ampm_ff/ampm_ff.h
+.\flash\sha512.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\flash\sha512.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\flash\sha512.o: C:\Keil\ARM\ARMCC\bin\..\include\ctype.h

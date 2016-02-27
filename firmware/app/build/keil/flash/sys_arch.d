@@ -1,0 +1,17 @@
+.\flash\sys_arch.o: ..\..\ampm_lib\uip\os\port\freeRTOS\sys_arch.c
+.\flash\sys_arch.o: ..\..\ampm_lib\uip\os\src\include\lwip/mem.h
+.\flash\sys_arch.o: ..\..\ampm_lib\uip-ppp-lib\uip-conf.h
+.\flash\sys_arch.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\flash\sys_arch.o: ..\..\ampm_lib\uip\os\src\include\lwip/sys.h
+.\flash\sys_arch.o: ..\..\FreeRTOS\FreeRTOS\Source\include\FreeRTOS.h
+.\flash\sys_arch.o: C:\Keil\ARM\ARMCC\bin\..\include\stddef.h
+.\flash\sys_arch.o: ..\..\inc\FreeRTOSConfig.h
+.\flash\sys_arch.o: ..\..\FreeRTOS\FreeRTOS\Source\include\projdefs.h
+.\flash\sys_arch.o: ..\..\FreeRTOS\FreeRTOS\Source\include\portable.h
+.\flash\sys_arch.o: ..\..\FreeRTOS\FreeRTOS\Source\include\deprecated_definitions.h
+.\flash\sys_arch.o: ..\..\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h
+.\flash\sys_arch.o: ..\..\FreeRTOS\FreeRTOS\Source\include\mpu_wrappers.h
+.\flash\sys_arch.o: ..\..\FreeRTOS\FreeRTOS\Source\include\task.h
+.\flash\sys_arch.o: ..\..\FreeRTOS\FreeRTOS\Source\include\list.h
+.\flash\sys_arch.o: ..\..\FreeRTOS\FreeRTOS\Source\include\queue.h
+.\flash\sys_arch.o: ..\..\FreeRTOS\FreeRTOS\Source\include\semphr.h

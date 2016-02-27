@@ -1,0 +1,14 @@
+.\flash\arc4.o: ..\..\wolfssl\wolfcrypt\src\arc4.c
+.\flash\arc4.o: ..\..\wolfssl\wolfssl/wolfcrypt/settings.h
+.\flash\arc4.o: ..\..\wolfssl\wolfssl/wolfcrypt/visibility.h
+.\flash\arc4.o: ..\..\wolfssl\wolfssl/wolfcrypt/arc4.h
+.\flash\arc4.o: ..\..\wolfssl\wolfssl/wolfcrypt/types.h
+.\flash\arc4.o: ..\..\wolfssl\wolfssl/wolfcrypt/wc_port.h
+.\flash\arc4.o: ..\..\wolfssl\wolfssl/wolfcrypt/types.h
+.\flash\arc4.o: ..\..\ampm_lib\ampm_ff/ampm_ff_port.h
+.\flash\arc4.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\flash\arc4.o: ..\..\ampm_lib\flash_mem\sst25.h
+.\flash\arc4.o: ..\..\ampm_lib\ampm_ff/ampm_ff.h
+.\flash\arc4.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\flash\arc4.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\flash\arc4.o: C:\Keil\ARM\ARMCC\bin\..\include\ctype.h
