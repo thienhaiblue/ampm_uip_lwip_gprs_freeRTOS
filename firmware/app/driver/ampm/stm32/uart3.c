@@ -18,11 +18,11 @@ uint32_t uart3_parity = 0;
 #define __DIVFRAQ(__PCLK, __BAUD)   (((__DIV(__PCLK, __BAUD) - (__DIVMANT(__PCLK, __BAUD) * 100)) * 16 + 50) / 100)
 #define __USART3_BRR(__PCLK, __BAUD) ((__DIVMANT(__PCLK, __BAUD) << 4)|(__DIVFRAQ(__PCLK, __BAUD) & 0x0F))
 
- uint8_t USART3_RxBuff[1024] = {0};
+ uint8_t USART3_RxBuff[256] = {0};
  RINGBUF USART3_RxRingBuff;
 
 #ifdef UART3_USE_TX_RINGBUFF
- uint8_t USART3_TxBuff[512] = {0};
+ uint8_t USART3_TxBuff[256] = {0};
  RINGBUF USART3_TxRingBuff;
 #endif
 

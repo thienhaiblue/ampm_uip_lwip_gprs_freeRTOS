@@ -258,7 +258,7 @@ uint8_t AMPM_GSM_Startup(const uint8_t *cmdList)
                 }
         break;
         case AMPM_GSM_STARTUP_IDLE_PHASE:
-             if(modemIMEIPass /*&& modemCIDPass*/)
+             //if(modemIMEIPass /*&& modemCIDPass*/)
               {
                   modemIMEIPass = 0;
                   modemCIDPass = 0;
