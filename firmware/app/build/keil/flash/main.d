@@ -54,10 +54,12 @@
 .\flash\main.o: ..\..\inc\dbg.h
 .\flash\main.o: ..\..\driver\ampm\stm32\uart1.h
 .\flash\main.o: ..\..\driver\ampm\stm32\uart1.h
+.\flash\main.o: ..\..\driver\ampm\stm32\uart3.h
+.\flash\main.o: ..\..\inc\hw_config.h
+.\flash\main.o: ..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\flash\main.o: ..\..\driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h
 .\flash\main.o: ..\..\ampm_lib\lib/tick.h
 .\flash\main.o: ..\..\driver\ampm\stm32\rtc.h
-.\flash\main.o: ..\..\inc\hw_config.h
 .\flash\main.o: ..\..\ampm_lib\lib/data_cmp.h
 .\flash\main.o: ..\..\inc\led.h
 .\flash\main.o: ..\..\ampm_lib\lib/sys_time.h

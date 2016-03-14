@@ -45,13 +45,13 @@ call_event(struct tcp_pcb *pcb, tcp_pcb_event_t event)
 				TCP_EVENT_CONNECTED(pcb, ERR_OK, err);
 			break;
 			case TCP_PCB_CLOSED:
-				
+				TCP_EVENT_ERR(pcb->errf,pcb,ERR_CLSD);
 			break;
 			case TCP_PCB_TIMEDOUT:
-				
+				TCP_EVENT_ERR(pcb->errf,pcb,ERR_ABRT);
 			break;
 			case TCP_PCB_ABORTED:
-				
+				TCP_EVENT_ERR(pcb->errf,pcb,ERR_ABRT);
 			break;
 			case TCP_PCB_DATA_SENT:
 				TCP_EVENT_SENT(pcb,NULL, err);

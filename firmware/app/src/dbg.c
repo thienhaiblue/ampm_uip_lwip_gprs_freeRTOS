@@ -13,19 +13,19 @@
 //#define mainTRCENA          0x01000000
 
 
-//int fputc( int iChar, FILE *pxNotUsed ) 
-//{
-//	/* Just to avoid compiler warnings. */
+int fputc( int iChar, FILE *pxNotUsed ) 
+{
+	/* Just to avoid compiler warnings. */
 //	( void ) pxNotUsed;
 
 //	if( mainDEMCR & mainTRCENA ) 
 //	{
 //		while( mainITM_Port32( 0 ) == 0 );
 //		mainITM_Port8( 0 ) = iChar;
-//  	}
-
-//  	return( iChar );
-//}
+//  }
+		USART3_PutChar(iChar);
+  	return( iChar );
+}
 
 uint32_t  DbgCfgPrintf(const uint8_t *format, ...)
 {

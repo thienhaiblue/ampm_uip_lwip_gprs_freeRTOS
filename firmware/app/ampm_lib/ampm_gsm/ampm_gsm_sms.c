@@ -4,7 +4,7 @@ Cellphone: (84) 97-8779-222
 Mail:thienhaiblue@ampm.com.vn 
 ----------------------------------
 AMPM ELECTRONICS EQUIPMENT TRADING COMPANY LIMITED.,
-Add: 634/6 Phan Van Suu street , Ward 13, Tan Binh District, HCM City, VN
+Add: 143/36/10 , Lien khu 5-6 street, Binh Hung Hoa B Ward, Binh Tan District , HCM City,Vietnam
 
 *********************************************************************/
 #include "ampm_gsm_common.h"

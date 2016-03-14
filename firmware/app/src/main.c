@@ -21,6 +21,7 @@
 #include "dbg.h"
 
 #include "uart1.h"
+#include "uart3.h"
 #include "stm32f10x_iwdg.h"
 #include "lib/ringbuf.h"
 #include "lib/tick.h"
@@ -43,7 +44,7 @@
 /* The check task uses the sprintf function so requires a little more stack. */
 #define main_GSM_GPRS_STACK_SIZE			( 128 )
 
-#define MAIN_Info(...)  //DbgCfgPrintf(__VA_ARGS__)
+#define MAIN_Info(...)  //printf(__VA_ARGS__)
 
 const char *ca_cert = "\
 -----BEGIN CERTIFICATE-----\r\n\
@@ -142,7 +143,8 @@ uint8_t dtmfBuf[64];
 uint8_t pdu2uniBuf[256];
 uint8_t replySmsBuf[256];
 uint8_t smsLen,c;
-
+void vAmpmNetTestTask4(void *pvParameters);
+void vAmpmNetTestTask2( void *pvParameters );
 void vAmpmNetTestTask1( void *pvParameters );
 void vAmpmNetTestTask( void *pvParameters );
 void vGSM_GPRS_Task(void *arg);
@@ -207,7 +209,7 @@ void SysInit(void)
 	ADC_TaskInit();
 /*GSM Init*/
  	USART1_Init(SystemCoreClock,__USART1_BAUDRATE);
-	
+	USART3_Init(SystemCoreClock/2,115200,USART_WordLength_8b,USART_StopBits_1,USART_Parity_No);
 	ampm_f_init();
 	if(ampm_f_open(&fil,"ca-cert.pem",AMPM_FA_READ) != FR_OK)
 	{
@@ -251,8 +253,8 @@ int main(void)
 	tcpip_init( NULL, NULL );
 /* Start the tasks defined within this file/specific to this demo. */
 	xTaskCreate( vGSM_GPRS_Task, "GSM_GPRS_TASK", 256 , NULL,tskIDLE_PRIORITY + 1 , NULL );
-  xTaskCreate( vAmpmNetTestTask, "ampm net test", 128 , "\r\nThienhaiblue->",tskIDLE_PRIORITY + 1 , NULL );
-	xTaskCreate( vAmpmNetTestTask1, "ampm net test1", 128 , "\r\nTony->",tskIDLE_PRIORITY + 1 , NULL );
+ // xTaskCreate( vAmpmNetTestTask, "ampm net test", 128 , "\r\nThienhaiblue->",tskIDLE_PRIORITY + 1 , NULL );
+	xTaskCreate( vAmpmNetTestTask4, "ampm net test1", 128 , "\r\nTony->",tskIDLE_PRIORITY + 1 , NULL );
 	/* Start the scheduler. */
 	vTaskStartScheduler();
 	while(1)
@@ -303,8 +305,24 @@ void vAmpmNetTestTask1( void *pvParameters )
 	xConnection.sin_addr.s_addr = inet_addr("118.69.60.174");
 	xConnection.sin_port = htons( 1880 );
 	/* create a TCP socket */
-  xClientSocket = socket(AF_INET, SOCK_STREAM, 0);
-	connect(xClientSocket,(struct sockaddr *)&xConnection,sizeof(xConnection));
+	
+	while (1) {
+			xClientSocket = socket(PF_INET, SOCK_STREAM, 0);
+			if (-1 == xClientSocket) {
+				close(xClientSocket);
+				printf("C > socket fail!\n");
+				continue;
+			}
+			printf("\r\n Connect to server\r\n");
+			if (0 != connect(xClientSocket, (struct sockaddr *)(&xConnection), sizeof(struct sockaddr))) {
+				close(xClientSocket);
+				printf("C > connect fail!\n");
+				vTaskDelay(1000 / portTICK_RATE_MS);
+				continue;
+			}
+			break;
+	}
+	
 	send( xClientSocket, pt, strlen(pt),0);
 	while(1){
 		lBytes = recv( xClientSocket, replySmsBuf, sizeof(replySmsBuf),0);
@@ -316,8 +334,66 @@ void vAmpmNetTestTask1( void *pvParameters )
 }
 
 
-//void vAmpmNetTestTask2( void *pvParameters )
-//{
+
+void vAmpmNetTestTask4(void *pvParameters)
+{
+    printf("Hello, welcome to client!\r\n");
+    while (1) {
+        int recbytes;
+        int sin_size;
+        int str_len;
+        int sta_socket;
+        struct sockaddr_in remote_ip;
+
+        sta_socket = socket(PF_INET, SOCK_STREAM, 0);
+
+        if (-1 == sta_socket) {
+            close(sta_socket);
+            printf("C > socket fail!\n");
+            continue;
+        }
+
+        printf("C > socket ok!\n");
+        memset(&remote_ip, 0,sizeof(struct sockaddr_in));
+        remote_ip.sin_family = AF_INET;
+        remote_ip.sin_addr.s_addr = inet_addr("118.69.60.174");
+        remote_ip.sin_port = htons( 1880 );
+
+        if (0 != connect(sta_socket, (struct sockaddr *)(&remote_ip), sizeof(struct sockaddr))) {
+            close(sta_socket);
+            printf("C > connect fail!\n");
+            vTaskDelay(3000 / portTICK_RATE_MS);
+            continue;
+        }
+
+        printf("C > connect ok!\n");
+        char *pbuf = (char *)malloc(128);
+        sprintf(pbuf, "%s\n", "client_send info");
+        if (write(sta_socket, pbuf, strlen(pbuf) + 1) < 0) {
+            printf("C > send fail\n");
+        }
+
+        printf("C > send success\n");
+        free(pbuf);
+
+        char *recv_buf = (char *)malloc(128);
+        while ((recbytes = read(sta_socket , recv_buf, 128)) > 0) {
+        	recv_buf[recbytes] = 0;
+            printf("C > read data success %d!\nC > %s\n", recbytes, recv_buf);
+        }
+        free(recv_buf);
+
+        if (recbytes <= 0) {
+		    close(sta_socket);
+            printf("C > read data fail!\n");
+        }
+    }
+}
+
+
+
+void vAmpmNetTestTask2( void *pvParameters )
+{
 //	int xClientSocket, newconn, size;
 //	char *pt =  pvParameters;
 //  struct sockaddr_in xConnection;
@@ -363,25 +439,25 @@ void vAmpmNetTestTask1( void *pvParameters )
 //				/* The next line is the secure equivalent of the standard
 //				sockets call:
 //				lReturned = send( xClientSocket, cString, strlen( cString ) + 1, 0 ); */
-//				//lReturned = wolfSSL_write(xWolfSSL_Object, cString, sizeof(cString) + 1);
+//				lReturned = wolfSSL_write(xWolfSSL_Object, cString, sizeof(cString) + 1);
 
 
 //				/* Short delay to prevent the messages streaming up the
 //				console too quickly. */
 //				vTaskDelay( 50 );
-////				lBytes = wolfSSL_read(xWolfSSL_Object, cReceivedString, sizeof(cReceivedString));
+//				lBytes = wolfSSL_read(xWolfSSL_Object, cReceivedString, sizeof(cReceivedString));
 
-////				/* Print the received characters. */
-////				if (lBytes > 0)
-////				{
-////					printf("Received by the secure server: %s\r\n", cReceivedString);
-////				}
+//				/* Print the received characters. */
+//				if (lBytes > 0)
+//				{
+//					printf("Received by the secure server: %s\r\n", cReceivedString);
+//				}
 
 //			} while( 1);
 //		}
 //		while(1);
 //		wolfSSL_free( xWolfSSL_Object );
-//}
+}
 
 
 
@@ -416,7 +492,7 @@ void vGSM_GPRS_Task(void *arg)
 			{
 				if(RINGBUF_Get(&dtmfRingBuf,&c) == 0)
 				{
-					DbgCfgPrintf("\r\nDTMF:%c",c);
+					printf("\r\nDTMF:%c",c);
 					if(c == '1')
 					{
 						Ampm_VoiceCallCancel(&incomingCall);
@@ -427,7 +503,8 @@ void vGSM_GPRS_Task(void *arg)
 			}
 			//SMS test
 			//Send Sms with interval = 3600s
-			if(CheckTimeout(&tSendSmsTime) == SYSTICK_TIMEOUT)
+			//if(CheckTimeout(&tSendSmsTime) == SYSTICK_TIMEOUT)
+			if(0)
 			{
 				InitTimeout(&tSendSmsTime,SYSTICK_TIME_SEC(3600));
 				smsLen =	sprintf((char *)pdu2uniBuf,"Xin chào!\n");

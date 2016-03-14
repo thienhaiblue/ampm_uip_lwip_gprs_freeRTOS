@@ -100,7 +100,7 @@ typedef enum {
                         (ret = (pcb)->poll((pcb)->callback_arg,(pcb)))
 #define TCP_EVENT_ERR(errf,arg,err) \
                         if((errf) != NULL) \
-                        (errf)((arg),(err))
+                        (errf)((pcb)->callback_arg,(err))
 
 #define IP_PCB struct ip_addr local_ip; \
   struct ip_addr remote_ip; \
